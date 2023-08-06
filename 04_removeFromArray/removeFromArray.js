@@ -3,8 +3,8 @@ const removeFromArray = function(array, ...theArgs) {
     // Slice the element
     let elementToRemove;
     for(let arg of theArgs) {
-        if (!(array.includes(arg))) {
-            arg = [];
+        if (array.includes(arg) === false) {
+            continue;
         };
         elementToRemove = array.findIndex((x) => x === arg);
         array.splice(elementToRemove, 1);
