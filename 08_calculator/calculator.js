@@ -18,7 +18,9 @@ const power = function(a, b) {
 	return a ** b;
 };
 
-const factorial = function() {
+const factorial = function(a) {
+  if (a === 0) { return 1 }
+  return a * factorial(a - 1);
 	
 };
 
