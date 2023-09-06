@@ -1,10 +1,7 @@
 const palindromes = function (str) {
-    str.toLowerCase();
-    if (str.includes('!')) {
-        str.split().splice('!');
-    }
+    let re = /^A-Za-z0-9/g;
+    str.toLowerCase().replace(re, '');
     return (str === str.split().reverse().join(''));
-
 };
 
 // Do not edit below this line
