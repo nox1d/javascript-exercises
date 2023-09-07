@@ -11,7 +11,7 @@ const findTheOldest = function (array) {
 
 const getAge = function (birth, death) {
   if (!death) {
-    death = new Date().getFullYear();
+    death = new Date().getFullYear(); 
   }
   return death - birth;
 };
